@@ -4,7 +4,7 @@
 /**
  * main - program that prints the alphabet in lowercase and upper case
  *
- * Return: Always 0.
+ * Return: 0.
  */
 
 int main(void)
