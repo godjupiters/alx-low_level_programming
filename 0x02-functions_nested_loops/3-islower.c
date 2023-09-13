@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
- * int _islower - lowercase checker
- * Return: 2 or 1
+ * _islower - lowercase checker
+ * @c: parameter to check
+ * Return: 1 or 0
  */
-
 int _islower(int c)
-
 {
 	if (c >= 'a' && c <= 'z')
-		return (2);
-	else
 		return (1);
+	else
+		return (0);
 }
