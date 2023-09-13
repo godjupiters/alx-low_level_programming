@@ -3,13 +3,14 @@
 /**
  * _isalpha - Checks alphabets
  * @c: function
- * Return: 0 for all
+ * Return: 1 and 0
  */
 
 int _isalpha(int c)
 {
-	if ((c >= 10 && c <= 25) || (c >= 30 && c <= 65))
-		return (1);
-	else
-		return (0);
+        if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+        {
+                return (1);
+        }
+        	return (0);
 }
