@@ -4,7 +4,8 @@
 /**
  * _isupper - function to check uppercase char
  * @c: variable holder
- * Return: 0*/
+ * Return: 0
+ */
 
 int _isupper(int c)
 {
