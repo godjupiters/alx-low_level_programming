@@ -13,12 +13,12 @@ int main(void)
 
         while (c + b < 4000000)
         {
-                c += b;
-                if (c % 2 == 0)
-                d += c;
-                b = c - b;
-                ++a;
+		c += b;
+		if (c % 2 == 0)
+		d += c;
+		b = c - b;
+		++a;
         }
-        printf("%ld", d);
-        return (0);
+	printf("%ld", d);
+	return (0);
 }
