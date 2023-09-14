@@ -1,6 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * times_table - prototype function
+ * Return: void
+ */
+
 void times_table(void)
 {
 	int r, c, output;
