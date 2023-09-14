@@ -1,5 +1,5 @@
 #include "main.h"
-void positive_or_negative.(int a)
+void positive_or_negative(int a)
 {
 	if (a > 0)
 	{
