@@ -23,7 +23,7 @@ void times_table(void)
 				if (r != 9)
 					printf(", ");
 			}
-
 		}
+		printf("\n");
 	}
 }
