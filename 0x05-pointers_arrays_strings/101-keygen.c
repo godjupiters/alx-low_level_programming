@@ -32,24 +32,24 @@ char *gen_pass(int len)
 
 void print_RanPass(int len)
 {
-	char *pass = gen_pass(len);
-	if (pass == NULL)
-	{
-		printf("Error: Could not generate random password.\n");
-		return;
-	}
-	
-	printf("%s\n", pass);
-	
-	free(pass);
+        char *pass = gen_pass(len);
+        if (pass == NULL)
+        {
+                printf("Error: Could not generate random password.\n");
+                return;
+        }
+
+        printf("%s\n", pass);
+
+        free(pass);
 }
 
 int main()
 {
-	int len;
-	printf("Enter the length of the password: ");
-	scanf("%d", &len);
+        int len;
+        printf("Enter the length of the password: ");
+        scanf("%d", &len);
 
-	print_RanPass(len);
-	return 0;
+        print_RanPass(len);
+        return 0;
 }
