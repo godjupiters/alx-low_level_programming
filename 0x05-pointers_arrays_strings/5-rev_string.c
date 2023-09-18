@@ -6,7 +6,8 @@
  * Return = Revered string
  */
 
-void rev_string(char *s){
+void rev_string(char *s)
+{
 	char ver = s[0];
 	int cnt  = 0;
 	int o;
