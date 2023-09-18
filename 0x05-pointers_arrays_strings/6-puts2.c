@@ -21,11 +21,11 @@ void puts2(char *str)
 		len++;
 	}
 	p = len - 1;
-	for (o = 0; o <= p; i++)
+	for (i = 0; i <= p; i++)
 	{
-		if (o % 2 == 0)
+		if (i % 2 == 0)
 		{
-			putchar(str[o]);
+			putchar(str[i]);
 		}
 	}
 	putchar('\n');
