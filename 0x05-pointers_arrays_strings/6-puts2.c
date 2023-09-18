@@ -11,7 +11,7 @@ void puts2(char *str)
 {
 	int len = 0;
 
-	p = 0;
+	int p = 0;
 	char *z = str;
 	int i;
 
@@ -25,8 +25,8 @@ void puts2(char *str)
 	{
 		if (o % 2 == 0)
 		{
-			_putchar(str[o]);
+			putchar(str[o]);
 		}
 	}
-	_putchar('\n');
+	putchar('\n');
 }
