@@ -2,8 +2,8 @@
 
 /**
  * rev_string - prototype function that reverses a string
- * @s = string
- * Return = Revered string
+ * @s: string
+ * Return: Revered string
  */
 
 void rev_string(char *s)
