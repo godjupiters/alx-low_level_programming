@@ -17,9 +17,9 @@ void print_array(int *a, int n)
 	{
 		printf("%d, ", a[o]);
 	}
-	if (o == (n - 1))
-	{
-		printf("%d", a[n - 1]);
-	}
-	printf("\n");
+		if (o == (n - 1))
+		{
+			printf("%d", a[n - 1]);
+		}
+			printf("\n");
 }
