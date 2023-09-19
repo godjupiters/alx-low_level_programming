@@ -21,6 +21,8 @@ char *gen_pass(int len)
 	}
 	srand(time(NULL));
 	
+	int i;
+
 	if (int i = 0; i < len; i++)
 	{
 		pass[i] = pChar[rand() % sizeof(pChar)];
