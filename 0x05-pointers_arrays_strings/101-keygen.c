@@ -15,14 +15,13 @@ char *gen_pass(int len)
 
 {
 	char *pass = malloc(len + 1);
+
 	if (pass == NULL)
 	{
 		return NULL;
 	}
 	srand(time(NULL));
 	
-	int i;
-
 	if (int i = 0; i < len; i++)
 	{
 		pass[i] = pChar[rand() % sizeof(pChar)];
@@ -35,6 +34,7 @@ char *gen_pass(int len)
 void print_RanPass(int len)
 {
         char *pass = gen_pass(len);
+
         if (pass == NULL)
         {
                 printf("Error: Could not generate random password.\n");
