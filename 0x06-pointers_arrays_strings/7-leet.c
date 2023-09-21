@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * leet -  prototype function that encodes a string into 1337.
+ * leet - prototype function that encodes a string into 1337.
  * You can only use one if in your code
  * You can only use two loops in your code
  * You are not allowed to use switch
@@ -11,23 +11,21 @@
  * Return: x
  */
 
-char *p(char *x)
+char *leet(char *x)
 {
-	int a, b;
+	int y, z;
 	char v1[] = "aAeEoOtTlL";
 	char v2[] = "4433007711";
 
-	for (a = 0; x[a] != '\0'; a++)
+	for (y = 0; x[y] != '\0'; y++)
 	{
-		for (b = 0; b < 10; b++)
-		{
-			if (x[a] == v1[b])
-			{
-				x[a] = v2[b];
-			}
-		}
+		for (z = 0; z < 10; z++)
+	{
+		if (x[y] == v1[z])
+	{
+		x[y] = v2[z];
 	}
-
+	}
+	}
 	return (x);
 }
-
