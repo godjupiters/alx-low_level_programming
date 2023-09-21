@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - prototype function that concatenates two strings.
+ * strncat - prototype function that concatenates two strings.
  * @dest: variable for input 1
  * @src: variable for input 2
  * @n: variable interger for input 3
