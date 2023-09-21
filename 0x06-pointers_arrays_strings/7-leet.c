@@ -12,7 +12,7 @@
 
 char *leet(char *x)
 {
-	int y, z;]
+	int y, z;
 	char v1[] = "aAeEoOtTlL";
 	char v2[] = "4433007711";
 
@@ -26,5 +26,7 @@ char *leet(char *x)
 			}
 		}
 	}
+	{
 	return (x);
+	}
 }
