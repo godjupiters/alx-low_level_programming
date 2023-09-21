@@ -11,7 +11,7 @@
  * Return: x
  */
 
-char *leet(char *x)
+char *p(char *x)
 {
 	int a, b;
 	char v1[] = "aAeEoOtTlL";
