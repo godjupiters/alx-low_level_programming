@@ -10,21 +10,23 @@
  * Return: x
  */
 
-char *leet(char *n)
+char *leet(char *x)
 {
-	int i, j;
-	char s1[] = "aAeEoOtTlL";
-	char s2[] = "4433007711";
+	int y, z;]
+	char v1[] = "aAeEoOtTlL";
+	char v2[] = "4433007711";
 
-	for (i = 0; n[i] != '\0'; i++)
+	for (y = 0; x[y] != '\0'; y++)
 	{
-		for (j = 0; j < 10; j++)
+		for (z = 0; z < 10; z++)
 		{
-			if (n[i] == s1[j])
+			if (x[y] == v1[z])
 			{
-				n[i] = s2[j];
+				x[y] = v2[z];
 			}
 		}
 	}
-	return (n);
+	{
+	return (x);
+	}
 }
