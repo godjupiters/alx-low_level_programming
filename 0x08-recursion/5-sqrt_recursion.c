@@ -5,8 +5,9 @@ int v_recursion(int n, int i);
 /**
  * _sqrt_recursion - a prototype function that returns
  * the natural square root of a number.
+ *
  * @n: variable holding the working value]
- * Return: squared value
+ * Return: squared value to be used
  */
 
 int _sqrt_recursion(int n)
@@ -24,7 +25,7 @@ int _sqrt_recursion(int n)
  * v_recursion - function for a recursion
  * @n: variable holding the working value
  * @i: variable for counter
- * Return: squared value
+ * Return: result of squared value
  */
 
 int v_recursion(int n, int i)
