@@ -1,6 +1,6 @@
 #include "main.h"
 
-int v_recursion(int n, int i);
+int v_recursion(int v, int o);
 
 /**
  * _sqrt_recursion - a prototype function that returns
@@ -23,22 +23,22 @@ int _sqrt_recursion(int n)
 
 /**
  * v_recursion - function for a recursion
- * @n: variable holding the working value
- * @i: variable for counter
+ * @v: variable holding the working value
+ * @o: variable for counter
  * Return: result of squared value
  */
 
-int v_recursion(int n, int i)
+int v_recursion(int v, int o)
 {
-	if (i * i > n)
+	if (o * o > v)
 	{
 		return (-1);
 	}
-	if (i * i == n)
+	if (o * o == v)
 	{
-		return (i);
+		return (o);
 	}
 	{
-	return (v_recursion(n, i + 1));
+	return (v_recursion(v, o + 1));
 	}
 }
