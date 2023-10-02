@@ -4,6 +4,33 @@
 #include <string.h>
 #include <errno.h>
 #include <limits.h>
+
+/**
+ * no_check -  a function that checks for strings
+ * @stg: variable holding the array string
+ * Return: Always 0 for (Success)
+ */
+
+int no_check(char *stg)
+{
+	unsigned int cnt;
+
+	cnt = 0;
+	while (cnt < strlen(stg))
+	{
+		if (!isdigit(stg[cnt]))
+		{
+			return (0);
+		}
+		{
+			cnt++;
+		}
+	}
+	{
+		return (1);
+	}
+}
+
 /**
  * main -  a program that adds positive numbers.
  * Print the result, followed by a new line
@@ -12,34 +39,22 @@
  * @argv: variable holding the arguments
  * Return: Always 0 for (Success)
  */
+
 int main(int argc, char *argv[])
 {
 	int cnt;
-	long str_int;
+	int str_int;
 	int total = 0;
-	char *endptr;
 
 	cnt = 1;
 	while (cnt < argc)
 	{
-		errno = 0;
-		str_int = strtol(argv[cnt], &endptr, 10);
-		if (errno == ERANGE && (str_int == LONG_MAX || str_int == LONG_MIN))
+		if (no_check(argv[cnt]))
 		{
-			perror("strtol");
-			return (1);
+			str_int = atoi(argv[cnt]);
+			total += str_int;
 		}
-		if (errno != 0 && str_int == 0)
-		{
-			perror("strtol");
-			return (1);
-		}
-		if (endptr == argv[cnt])
-		{
-			fprintf(stderr, "No digits were found\n");
-			return (1);
-		}
-		total += str_int;
+		else
 		{
 			printf("Error\n");
 			return (1);
