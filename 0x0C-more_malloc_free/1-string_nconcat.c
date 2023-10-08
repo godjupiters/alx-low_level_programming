@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <string.h>
 #include "main.h"
 
 /**
@@ -7,6 +6,7 @@
  * @s1: variable 1 holding the string to append
  * @s2: variable 2 holding the string to concatenate
  * @n: variable holding the number of bytes from s2 concatenate s1
+ *
  * Return: resulting pointer to the resulting string
  */
 
