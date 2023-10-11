@@ -3,9 +3,6 @@
 
 /**
  * array_iterator - function that executes a function given
- * as a parameter on each element of an array.
- * where size is the size of the array
- * and action is a pointer to the function you need to use
  * @array: represents the array in use
  * @size: variable holding the no. of elements to be printed
  * @action: variable pointer to print regular else hex
