@@ -7,7 +7,7 @@
  * @n: variable holding the no. of paramters passed
  * @...: stage holder for countless variable numbers of
  * paramters
- * Return: If n == 0, return 0.
+ * Return: calc
  */
 
 int sum_them_all(const unsigned int n, ...)
