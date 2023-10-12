@@ -2,9 +2,11 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all -  a function that returns the sum of all its parameters.
+ * sum_them_all -  a function that returns the sum of
+ * all its parameters.
  * @n: variable holding the no. of paramters passed
- * @...: stage holder for countless variable numbers of paramters
+ * @...: stage holder for countless variable numbers of
+ * paramters
  * Return: If n == 0, return 0.
  */
 
