@@ -6,18 +6,20 @@
 #include <stddef.h>
 
 /**
- * struct lists - a structure holding all the linked single list
- * @str: a variable holding the string
- * @len: a variable holding the length of string
- * @follow: a variable holding the following node
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
  */
 
-typedef struct lists
+typedef struct list_s
 {
-	char *str;
-	unsigned int len;
-	struct lists *follow;
-} list_table;
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
 
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
