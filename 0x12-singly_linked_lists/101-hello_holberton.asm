@@ -2,13 +2,14 @@
     extern printf
 
     section .data
-        msg: db 'Hello, Holberton', 10, 0
+        hello: db "Hello, Holberton", 10, 0
 
     section .text
         main:
-            push rbp
-            mov rdi, msg
-            xor rax, rax
+            mov rbp, rsp
+            lea rdi, [rel hello]
+            mov rax, 0
             call printf
-            pop rbp
+            mov rsp, rbp
             ret
+
