@@ -12,4 +12,3 @@
             call printf
             pop rbp
             ret
-
