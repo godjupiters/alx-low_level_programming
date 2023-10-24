@@ -3,8 +3,9 @@
 /**
  * print_listint - a prototype function that prints all
  * the elements of a listint_t list.
+ *
  * @h: a variable holding the linked list in listint_t for print
- * Return: counter
+ * Return: counter result
  */
 
 size_t print_listint(const listint_t *h)
