@@ -7,7 +7,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
-void flagio(int sys, int fdir, char *filename, char mod);
+void flagio(int sys, int fd, char *filename, char mod);
 
 /**
  * main - a function that call copy from one file to file
@@ -50,17 +50,17 @@ int main(int argcount, char *argpassed[])
 /**
  * flagio - a function that checks file can open or not
  * @sys: variable holding the file descriptor to be opened
- * @fdir: variable holding the file descriptor
+ * @fd: variable holding the file descriptor
  * @filename:  variable holding the name of file
  * @mod: variable holding the action, close or open
  * Return: VOID
  */
 
-void flagio(int sys, int fdir, char *filename, char mod)
+void flagio(int sys, int fd, char *filename, char mod)
 {
 	if (mod == 'C' && sys == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fdir %d\n", fdir);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 	else if (mod == 'O' && sys == -1)
